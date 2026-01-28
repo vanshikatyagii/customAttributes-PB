@@ -2,7 +2,7 @@ import { expect } from '@playwright/test';
 
 export async function createNewReviewCycleTillForms(page) {
   
-  await page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+  await page.goto('http://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
   await page.waitForLoadState('networkidle');
 
   await page.getByRole('link', { name: 'Reviews', exact: true }).click();
